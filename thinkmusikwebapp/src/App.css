@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:var(--font-family);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+    width: 100%;
+    padding: 20px;
+}
+.sidebar{
+    background-color: var(--color-bars);
+    color: white;
+    height: 100vh;
+    transition: all .5s;
+    width: 17.0625rem;
+    height: 154.25rem;
+   flex-shrink: 0;
+
+}
+.top_section{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 2rem 1rem;
+    background-color: var(--color-bars);
+    width: 100%;
+    /*justify-content: space-between;*/
+}
+.logo{
+    font-size: 25px;
+    margin-left: 1rem;
+}
+.bars{
+    font-size: 25px;
+    display: flex;
+    margin-left: 30px;
+}
+.sidebar__navlinks{
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 2rem 0 2rem 1rem;
+
+}
+.sidebar__navlinks-line{
+    background: var(--stroke-dark-blue-700, #2A2D3C);
+    width: 17.06294rem;
+    height: 0.0625rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.link{
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    gap: 15px;
+    transition:all .5s;
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.active{
+    background: linear-gradient(92deg, rgba(71, 119, 225, 0.10) 0%, rgba(5, 38, 109, 0.07) 100%);
+    color: var(--color-active);
+  
+}
+.active::before{
+    content: '';
+    display: inline-block;
+    justify-self: flex-start;
+    width: 3px;
+    height: 2.5rem;
+    background-color:var(--color-active) ;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.icon, .link_text{
+    font-size: 20px;
+    z-index: 5;
 }
