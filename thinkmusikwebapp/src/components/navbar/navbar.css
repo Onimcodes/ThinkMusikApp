@@ -1,0 +1,85 @@
+
+.navbar__container{
+   background: var(--color-bars);
+   margin: 0;
+  padding: .8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+  z-index: 8;
+  top: 0;
+  /*left:17.0625rem ;*/
+    width: 82%;
+  
+}
+.navbar__instrument-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12%;
+    margin-left: 2rem;
+    
+}
+.navbar__instrument-section p{
+    color:var(--color-text);
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar__instrument-section_dropdown{
+    color: var(--color-text);
+    font-size:1.5rem ;
+}
+.navbar__profile-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin-right: 2.5rem;
+
+}
+.navbar__profile-section_search{
+    border-radius: 5px;
+    background: var(--dark-blue, #131627);
+    padding: .5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 249px;
+    height: 35px;
+    }
+.navbar__profile-section_search input{
+outline:none ;
+border: none;
+background: var(--dark-blue, #131627);
+color: var(--color-text);
+font-weight: 500;
+font-size: 14px;
+margin-left: 5px;
+}
+
+.navbar__profilename{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__profilename div{
+    color: var(--black, #000);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    background-color:#50B1D1 ;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.searchIcon{
+    color: var(--grey-main-text, #D1D2D6);
+    
+}
