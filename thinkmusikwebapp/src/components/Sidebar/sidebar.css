@@ -1,0 +1,115 @@
+
+.container{
+    display: flex;
+    /*border: 1px solid red;*/
+}
+
+main{
+    width: 100%;
+    /*margin-left:16rem ;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*overflow-x: hidden;   */
+}
+.sidebar{
+    background-color: var(--color-bars);
+    color: white;
+    height: 100vh;
+    transition: all .5s;
+    width: 17.0625rem;
+    height: 154.25rem;
+   flex-shrink: 0;
+   margin: 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   /*border: 1px solid red ;*/
+}
+.top_section{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bars);
+    margin: 0 2rem;
+    padding:1rem 0;
+
+    /*justify-content: space-between;*/
+}
+.logo{
+    font-size: 25px;
+    margin-left: 1rem;
+}
+.bars{
+    font-size: 25px;
+    display: flex;
+    margin-left: 30px;
+}
+.sidebar__navlinks{
+    margin-bottom: 1rem;
+    width: 100%;
+    /*padding: 2rem 0 2rem 1rem;*/
+
+}
+.sidebar__navlinks-line{
+    background: var(--stroke-dark-blue-700, #2A2D3C);
+    width: 17.06294rem;
+    height: 0.0625rem;
+}
+.sidebar__navlink{
+    display: flex;
+    gap: 10px;
+    margin: 0 2rem;
+    width: 80%;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text);
+    margin: 1.5rem 0;
+    gap: 15px;
+    transition:all .5s;
+    width: 100%;
+}
+
+
+ .active{
+    background: linear-gradient(92deg, rgba(71, 119, 225, 0.10) 0%, rgba(5, 38, 109, 0.07) 100%);
+    color: var(--color-active);
+  
+}
+ .active::before{
+    content: '';
+    display: inline-block;
+    justify-self: flex-start;
+    width: 3px;
+    height: 3.5rem;
+    background-color:var(--color-active) ;
+  
+}
+
+
+.icon, .link_text{
+    font-size: 14px;
+   font-weight: 500;
+}
+
+.sidebar__navlink-shopbtn{
+border-radius: 20px;
+background: rgba(51, 117, 217, 0.20);
+padding: 4px 16px;
+color: var(--blue, #3375D9);
+outline: none;
+border: none;
+font-size: 14px;
+font-weight: 500;
+}
+.sidebar__navlink-bottom{
+    margin-bottom: 5rem;
+}
+.sidebar__darkmode{
+    display: flex;
+    margin: 2rem 0 0 2rem;
+}
